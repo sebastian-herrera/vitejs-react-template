@@ -20,3 +20,8 @@ proseWrap: preserve
 htmlWhitespaceSensitivity: css
 vueIndentScriptAndStyle: false
 endOfLine: lf
+
+overrides:
+  - files: '*.{css,scss}'
+    options:
+      singleQuote: false
