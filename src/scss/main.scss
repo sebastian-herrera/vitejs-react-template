@@ -1,7 +1,4 @@
-@import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "base/destyle";
-@import "base/typography";
-@import "layout/grid";
-@import "themes/theme";
+@use "base/destyle";
+@use "base/typography";
+@use "layout/grid";
+@use "themes/theme";
