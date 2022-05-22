@@ -4,7 +4,15 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  settings: {
+    'import/resolver': {
+      alias: {
+        extensions: ['.js', '.jsx'],
+        map: [['@', './packages/app/src']],
+      },
+    },
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
