@@ -6,29 +6,28 @@
     "packages/*"
   ],
   "scripts": {
+    "prepare": "husky install",
     "dev": "npm run dev -w app",
-    "build": "npm run build -w app",
-    "preview": "npm run preview -w app",
     "dev:api": "npm run dev -w api",
-    "prepare": "husky install"
+    "build": "npm run build -w app",
+    "preview": "npm run preview -w app"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
-    "@commitlint/config-conventional": "^17.0.0",
-    "eslint": "^8.16.0",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "eslint": "^8.22.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.1",
-    "prettier": "^2.6.2"
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
   },
   "engines": {
-    "node": "16.14.2",
     "npm": ">=8"
   }
 }
