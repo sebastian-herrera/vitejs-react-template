@@ -19,7 +19,6 @@ const loadRouter = (file) => {
 
   if (name !== 'index') {
     import(`./${file}`).then((routerModule) => {
-      console.log(`loaded -> /${name}`);
       router.use(`/${name}`, routerModule.default);
       // router.use(`/${name}`, routerModule.router); // in case it is not a default export
     });

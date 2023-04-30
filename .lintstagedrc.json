@@ -1,4 +1,5 @@
 {
   "*": "npx prettier --ignore-unknown --write",
-  "*.{js,jsx}": ["npx eslint"]
+  "packages/api/**/*.js": ["pnpm --filter api run lint"],
+  "packages/app/**/*.{js,jsx}": ["pnpm --filter app run lint"]
 }

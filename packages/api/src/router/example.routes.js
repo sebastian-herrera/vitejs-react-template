@@ -7,4 +7,3 @@ router.get('/', getExample);
 router.post('/', createExample);
 
 export default router;
-// export { router };

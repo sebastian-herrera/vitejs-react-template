@@ -4,15 +4,27 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --experimental-specifier-resolution=node src/server.js"
+    "start": "node --experimental-specifier-resolution=node src/",
+    "dev": "nodemon --experimental-specifier-resolution=node src/",
+    "lint": "eslint ./ --ext js --report-unused-disable-directives --max-warnings 0",
+    "clean": "rm -rf ./node_modules"
+  },
+  "imports": {
+    "#src/*": "./src/*"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "helmet": "^5.1.1"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.1.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "eslint": "^8.39.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.22"
   }
 }

@@ -1,4 +1,4 @@
-import { httpError } from '../helpers';
+import { httpError } from '#src/helpers';
 
 const getExample = async (req, res) => {
   try {
@@ -10,10 +10,7 @@ const getExample = async (req, res) => {
 
 const createExample = async ({ body }, res) => {
   try {
-    const { example } = body;
-    console.log(example);
-
-    return res.status(201).end();
+    return res.send(body).end();
   } catch (err) {
     return httpError(res, err);
   }
