@@ -7,7 +7,7 @@
     "dev:api": "pnpm --filter api run dev",
     "dev:app": "pnpm --filter app run dev",
     "clean": "rm -rf ./node_modules && pnpm -r clean",
-    "prepare": "husky install"
+    "prepare": "husky install "
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
